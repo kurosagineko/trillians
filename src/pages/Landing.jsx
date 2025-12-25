@@ -44,28 +44,73 @@ export default function Landing() {
 			</div>
 			<div className='extra-container container-theme'>
 				<div className='extra-links'>
-					<a href='#'>Facebook</a>
-					<a href='#'>Twitter</a>
-					<a href='#'>Instagram</a>
-					<a href='#'>LOST & FOUND</a>
+					<a
+						href='https://www.facebook.com/trilliansrockbar'
+						target='_blank'
+					>
+						Facebook
+					</a>
+					<a
+						href='https://x.com/trilliansrock'
+						target='_blank'
+					>
+						Twitter
+					</a>
+					<a
+						href='https://www.instagram.com/trilliansrocks/'
+						target='_blank'
+					>
+						Instagram
+					</a>
+					<a
+						href='https://www.facebook.com/groups/957326982258638'
+						target='_blank'
+					>
+						LOST & FOUND
+					</a>
 				</div>
 				<div className='friend-links'>
 					<h2>Some of our friends</h2>
 					<ul className='friend-links-list'>
 						<li>
-							<a href='#'>THE RENEGADE ROCK SHOW</a>
+							<a
+								href='https://www.facebook.com/groups/renrockshow'
+								target='_blank'
+							>
+								THE RENEGADE ROCK SHOW
+							</a>
 						</li>
 						<li>
-							<a href='#'>SHOCK CITY</a>
+							<a
+								href='https://www.facebook.com/shockcityprod'
+								target='_blank'
+							>
+								SHOCK CITY
+							</a>
 						</li>
 						<li>
-							<a href='#'>SD ENTERTAINMENT</a>
+							<a
+								href='https://www.facebook.com/SDEntertainmentIre'
+								target='_blank'
+							>
+								SD ENTERTAINMENT
+							</a>
 						</li>
 						<li>
-							<a href='#'>FLOOR SHOW PROMOTIONS</a>
+							<a
+								href='https://www.facebook.com/floorshowpromotions'
+								target='_blank'
+							>
+								FLOOR SHOW PROMOTIONS
+							</a>
 						</li>
 						<li>
-							<a href='#'>CONQUEST MUSIC</a>
+							<a
+								href='https://www.facebook.com/ConquestMusicLtd'
+								target='_blank'
+							>
+								CONQUEST MUSIC
+							</a>
 						</li>
 					</ul>
 				</div>
