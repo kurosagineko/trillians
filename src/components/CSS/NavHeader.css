@@ -1,0 +1,15 @@
+nav {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	border-bottom: 2px solid black;
+	background: linear-gradient(120deg, #000000, rgb(27, 0, 0), black);
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+	gap: 20px;
+}

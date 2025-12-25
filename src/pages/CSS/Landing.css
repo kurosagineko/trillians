@@ -1,0 +1,27 @@
+.logo {
+	filter: drop-shadow(0 0 1em #ff646479);
+	width: 400px;
+	margin-bottom: 10px;
+}
+
+.main-container {
+	background: linear-gradient(120deg, #000000, rgb(27, 0, 0), black);
+	color: white;
+	width: 600px;
+	height: 700px;
+	margin: 40px auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid black;
+	border-radius: 5px;
+	box-shadow: 10px 10px 20px rgb(0, 0, 0);
+}
+
+.opening-times {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
