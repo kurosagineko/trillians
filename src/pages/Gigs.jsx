@@ -41,7 +41,7 @@ export default function Gigs() {
 									className='gig-listing'
 									key={gig}
 								>
-									<p className='ticketed-gig'>{gigName}</p>{' '}
+									<p className='ticketed-gig'>{gigName} → </p>{' '}
 									<a
 										href={ticketsLink}
 										target='_blank'
@@ -86,6 +86,17 @@ export default function Gigs() {
 					src={logo}
 					alt=''
 				/>
+				<h2 style={{ fontSize: '2rem' }}>What's On At Trillians</h2>
+				<p style={{ textAlign: 'center' }}>
+					Any gigs listed with +LOCAL means there's room for local bands to support, Please contact via
+					trillians@gmx.com or buzz through{' '}
+					<a
+						href='https://www.facebook.com/trilliansrockbar'
+						target='_blank'
+					>
+						Facebook
+					</a>
+				</p>
 				<GigListings />
 			</div>
 			<Footer />
