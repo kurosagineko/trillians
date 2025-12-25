@@ -32,3 +32,13 @@ button:hover {
   background-color: #a00000;
   transform: scale(1.2);
 }
+
+a {
+  color: #a00000;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff1616;
+  background-color: rgba(0, 0, 0, 0.87);
+}
