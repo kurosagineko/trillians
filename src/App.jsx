@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Landing from './pages/Landing';
 import About from './pages/About';
 import Gigs from './pages/Gigs';
+import Contact from './pages/Contact';
 import './App.css';
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
 			<Route
 				path='/gigs'
 				element={<Gigs />}
+			/>
+			<Route
+				path='/contact'
+				element={<Contact />}
 			/>
 
 			{/* Protected routes */}

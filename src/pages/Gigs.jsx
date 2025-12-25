@@ -9,9 +9,13 @@ export default function Gigs() {
 	const [rawGigListData, setRawGigListData] = useState('');
 
 	useEffect(() => {
-		fetch('../../GigGuide/gigs.txt')
-			.then(res => res.text())
-			.then(text => setRawGigListData(text));
+		try {
+			fetch('../../GigGuide/gigs.txt')
+				.then(res => res.text())
+				.then(text => setRawGigListData(text));
+		} catch (e) {
+			throw new error('Failed to load gig data from GigGuide/gigs.txt', e);
+		}
 	}, []);
 
 	useEffect(() => {
@@ -84,7 +88,7 @@ export default function Gigs() {
 				<img
 					className='logo'
 					src={logo}
-					alt=''
+					alt='Trillians rock bar logo'
 				/>
 				<h2 style={{ fontSize: '2rem' }}>What's On At Trillians</h2>
 				<p style={{ textAlign: 'center' }}>

@@ -27,7 +27,9 @@ export default function NavHeader() {
 					<button>Gallery</button>
 				</li>
 				<li>
-					<button>Contact Us</button>
+					<Link to='/contact'>
+						<button>Contact Us</button>
+					</Link>
 				</li>
 			</ul>
 			<ul className='nav-links'>

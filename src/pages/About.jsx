@@ -12,7 +12,7 @@ export default function About() {
 				<img
 					className='logo'
 					src={logo}
-					alt=''
+					alt='Trillians rock bar logo'
 				/>
 				<div className='about-section'></div>
 				<h2 style={{ fontSize: '1.8rem' }}>Trillians Rock Bar is Newcastle's best kept secret!</h2>
@@ -23,7 +23,7 @@ export default function About() {
 				<p>
 					A cellar bar{' '}
 					<a
-						href='https://maps.app.goo.gl/uiurksDpn9W78Wb47'
+						href='https://maps.app.goo.gl/BKoUnb5pqYY7T2DY9'
 						target='_blank'
 					>
 						hidden away in Princess Square

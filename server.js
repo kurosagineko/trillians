@@ -1,5 +1,5 @@
 import express from 'express';
-import cookieParser from 'cookie-parser';
+import nodemailer from 'nodemailer';
 import { rateLimit } from 'express-rate-limit';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -53,12 +53,9 @@ app.use((req, res, next) => {
 });
 
 app.use(express.json());
-app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(limiter);
 app.set('etag', false);
-
-process.env.NODE_ENV = 'production' && app.use(express.static(path.join(__dirname, './dist')));
 
 app.use((error, req, res, next) => {
 	console.error('error:', error);
@@ -67,6 +64,44 @@ app.use((error, req, res, next) => {
 
 	res.status(status).json({ error: { message } });
 	next();
+});
+
+process.env.NODE_ENV = 'production' && app.use(express.static(path.join(__dirname, './dist')));
+
+const transporter = nodemailer.createTransport({
+	host: 'smtp.gmail.com',
+	port: 587,
+	secure: false, // use STARTTLS
+	auth: {
+		user: process.env.GMAIL_USER,
+		pass: process.env.GMAIL_APP_PASS,
+	},
+});
+
+transporter
+	.verify()
+	.then(() => console.log('SMTP ready'))
+	.catch(err => {
+		console.error('SMTP verify failed', err);
+	});
+
+app.post('/api/contact', async (req, res) => {
+	const { name, email, subject, message } = req.body;
+	try {
+		const mail = {
+			from: `"Trillians Contact Form" <${process.env.GMAIL_USER}>`,
+			to: process.env.TO_EMAIL,
+			subject: `${subject} — ${name}`,
+			text: `From: ${name} <${email}>\n\n${message}`,
+			html: `<p><strong>From:</strong> ${name} &lt;${email}&gt;</p><p>${message.replace(/\n/g, '<br>')}</p>`,
+		};
+
+		await transporter.sendMail(mail);
+		res.json({ ok: true });
+	} catch (e) {
+		console.error('Send failed', err);
+		res.status(500).json({ error: 'Failed to send message' });
+	}
 });
 
 (async () => {

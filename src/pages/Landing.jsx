@@ -11,10 +11,10 @@ export default function Landing() {
 				<img
 					className='logo'
 					src={logo}
-					alt=''
+					alt='Trillians rock bar logo'
 				/>
 				<p>Thank you all for your continued support!</p>
-				<p>┻━┻ ︵ ＼( °□° )／ ︵ ┻━┻</p>
+				<p>┻━┻ ︵ \( °□° )/ ︵ ┻━┻</p>
 				<div className='opening-times-container'>
 					<p style={{ marginBottom: '0', textAlign: 'center' }}>Opening Times:</p>
 					<ul className='opening-times-list'>
