@@ -1,0 +1,11 @@
+.about-container {
+	width: 80%;
+	height: 1000px;
+	margin: 40px auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	text-align: center;
+}

@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Landing from './pages/Landing';
+import About from './pages/About';
 import './App.css';
 
 function App() {
@@ -9,6 +10,10 @@ function App() {
 			<Route
 				path='/'
 				element={<Landing />}
+			/>
+			<Route
+				path='/about'
+				element={<About />}
 			/>
 
 			{/* Protected routes */}

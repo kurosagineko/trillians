@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './CSS/NavHeader.css';
 
 export default function NavHeader() {
@@ -5,10 +6,14 @@ export default function NavHeader() {
 		<nav>
 			<ul className='nav-links'>
 				<li>
-					<button>Home</button>
+					<Link to='/'>
+						<button>Home</button>
+					</Link>
 				</li>
 				<li>
-					<button>About Trillians</button>
+					<Link to='/about'>
+						<button>About Trillians</button>
+					</Link>
 				</li>
 				<li>
 					<button>Gig Guide</button>
