@@ -6,7 +6,7 @@ import logo from '../../public/trills-logo.png';
 
 export default function About() {
 	return (
-		<div>
+		<div className='about'>
 			<NavHeader />
 			<div className='about-container container-theme'>
 				<img
