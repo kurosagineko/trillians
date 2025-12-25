@@ -1,0 +1,37 @@
+.gigs {
+	flex: 1 0 auto;
+}
+
+.gigs-container {
+	width: 800px;
+	min-height: 800px;
+	height: fit-content;
+	margin: 40px auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.gigs-list {
+	list-style: none;
+	padding: 0;
+}
+
+.gig-listing {
+	font-size: 1.2rem;
+	padding: 20px;
+	border-bottom: 2px solid black;
+}
+
+.gig-listing-title {
+	font-size: 1.6rem;
+	padding: 20px;
+	border-bottom: 2px solid black;
+}
+
+.ticketed-gig {
+	display: inline;
+	margin-right: 20px;
+}

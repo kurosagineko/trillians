@@ -1,0 +1,21 @@
+?Each new line needs to start with a hash, if need a link for tickets, add a dollar sign then the link where to buy
+?Comments are denoted by a question mark and will be disregarded when compiled?
+#DECEMBER
+#Thur 4th - Slackrr
+#Fri 5th - Red Hot Chilipinos RHCP Tribute
+#Sat 6th - Hellbound Tribute to Pantera
+#Sun 7th - Slalom D/Great Silence/Tempest Saint £5
+#Wed 10th - Chrysalid/culloden/tempest snake
+#Thur 11th - 999 $https://trillians.nuwebgroup.com/events/138359
+#Fri 12th - The Force
+#Sat 13th - The Final Pout Down
+#Mon 15th - Blame Yourself/Shallow/Wnsdy/Wretch
+#Wed 17th - Nerdcore Games Night
+#Fri 19th - Maiden England + Metal Militia
+#Sat 20th - Metal Militia + Maiden England
+#Sun 21st - Ruled By Raptors/Proven Rivals/Shouting at Strangers/Hightide Tokyo £10 On The Door
+#Sat 27th - Kraken Waker
+#Sun 28th - GIG cancelled, all online tickets have been refunded,
+#Mon 29th - Crashed Out Xmas Bash
+#Wed 31st - New Years Eve party
+#Thursday 1st CLOSED for sobering up activities

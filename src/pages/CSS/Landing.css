@@ -72,3 +72,7 @@
 .friend-links-list li {
   margin: 5px;
 }
+
+.home {
+  flex: 1 0 auto;
+}

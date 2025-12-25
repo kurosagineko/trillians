@@ -5,7 +5,7 @@ import logo from '../../public/trills-logo.png';
 
 export default function Landing() {
 	return (
-		<>
+		<div className='home'>
 			<NavHeader />
 			<div className='main-container container-theme'>
 				<img
@@ -116,6 +116,6 @@ export default function Landing() {
 				</div>
 			</div>
 			<Footer />
-		</>
+		</div>
 	);
 }

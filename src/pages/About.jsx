@@ -30,11 +30,7 @@ export default function About() {
 					</a>
 					, just opposite the city's main library, Trillians is famed across the land for it's great atmosphere and
 					varied live shows throughout the year. With regular Rock, Metal, Punk, Hardcore, Reggae, Glam and many other
-					shows you can guarantee an eclectic mix on the{' '}
-					<Link to='/gigs'>
-						<a href='#'>Gig Guide</a>
-					</Link>
-					.
+					shows you can guarantee an eclectic mix on the <Link to='/gigs'>Gig Guide</Link>.
 				</p>
 				<p>
 					“I was the sound engineer at Trillians for 23 years and it had always been my dream to run the place” said
@@ -53,12 +49,8 @@ export default function About() {
 					that community. People feel safe coming in here. They feel like they belong.”
 				</p>
 				<p>
-					A great range of{' '}
-					<Link to='/drinks'>
-						<a href='#'>beers, lagers, ciders</a>
-					</Link>
-					, spirits and more can be found behind Trillians iconic bar featuring inlaid albums from legendary artists.
-					It's got to be seen.
+					A great range of <Link to='/drinks'>beers, lagers, ciders</Link>, spirits and more can be found behind
+					Trillians iconic bar featuring inlaid albums from legendary artists. It's got to be seen.
 				</p>
 				<p>See you at the bar!</p>
 				<p style={{ fontWeight: 'bolder', fontSize: '1.1rem' }}>

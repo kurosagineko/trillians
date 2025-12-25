@@ -16,7 +16,9 @@ export default function NavHeader() {
 					</Link>
 				</li>
 				<li>
-					<button>Gig Guide</button>
+					<Link to='/gigs'>
+						<button>Gig Guide</button>
+					</Link>
 				</li>
 				<li>
 					<button>Drinks</button>
